@@ -79,12 +79,12 @@
   },
   "eslint-disable": {
     "prefix": "eslint-disable",
-    "body": ["/* eslint-disable ${1:rule} */", "$0/* eslint-enable ${1} */"],
-    "description": "ESLint disable wrapper"
+    "body": ["/* eslint-disable */"],
+    "description": "ESLint disable file"
   },
   "eslint-disable-line": {
     "prefix": "eslint-disable-line",
-    "body": ["// eslint-disable-line ${0:rule}"],
+    "body": ["// eslint-disable-line"],
     "description": "ESLint disable line"
   },
   "eslint-disable-next-line": {
@@ -109,12 +109,31 @@
     ],
     "description": "import remax"
   },
+  "remax class": {
+    "prefix": "remax class",
+    "body": [
+      "import React, { Compoent } from 'react';",
+      "import { View } from 'remax';",
+      "",
+      "export default class ${0:${TM_FILENAME_BASE}} extends Component {",
+      "   render() {",
+      "       ",
+      "   }",
+      "}"
+    ]
+  },
   "function component": {
     "prefix": "fcomp",
-    "body": ["export default (props) => {", "   ", "}"]
+    "body": [
+      "import react from 'react';",
+      "",
+      "export default (props) => {",
+      "   ",
+      "}"
+    ]
   },
   "redux": {
-    "prefix": "redux connetx",
+    "prefix": "redux",
     "body": ["import { connect } from '${0:react-redux}'"]
   }
 }

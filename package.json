@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "url": "https://github.com/newset/web-snippets.git"
+  },
   "contributes": {
     "snippets": [
       {
@@ -28,7 +31,8 @@
   "categories": [
     "Snippets"
   ],
-  "publisher": "publisher",
+  "icon": "src/imgs/coding.png",
+  "publisher": "luomiaotai",
   "author": "newset",
   "license": "ISC"
 }
