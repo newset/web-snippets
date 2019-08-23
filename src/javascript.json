@@ -1,0 +1,120 @@
+{
+  "classname": {
+    "prefix": "cln",
+    "body": "className='${1:class}' "
+  },
+  "dva model": {
+    "prefix": "dva",
+    "body": [
+      "export default {",
+      "    namespace: '${1:namespace}',",
+      "    state: {},",
+      "    reducers: {",
+      "        save(state, { payload }) {",
+      "        }",
+      "    },",
+      "    effects: {",
+      "        * ${2:effect} ({ payload }, { put, call }) {",
+      "",
+      "        }",
+      "    }",
+      "};"
+    ],
+    "description": "dva model"
+  },
+  "taro redux": {
+    "prefix": "tredux",
+    "body": ["import { connect } from '@tarojs/redux'"]
+  },
+  "saga request": {
+    "prefix": "sagarequest",
+    "body": ["import { ${1:get} } from '@doctorwork/saga/dist/request'"]
+  },
+  "saga": {
+    "prefix": "saga",
+    "body": ["import { ${1:request} } from '@doctorwork/saga'"]
+  },
+  "taro class": {
+    "prefix": "taroc",
+    "body": [
+      "import Taro, { Component } from '@tarojs/taro';",
+      "import { Image, Text, View } from '${1:@tarojs}/components';",
+      "",
+      "export default class ${0:${TM_FILENAME_BASE}} extends Component {",
+      "   render() {",
+      "       ",
+      "   }",
+      "}"
+    ]
+  },
+  "taro class redux": {
+    "prefix": "tarocr",
+    "body": [
+      "import Taro, { Component } from '@tarojs/taro';",
+      "import { connect } from '@tarojs/redux'",
+      "import { Image, Text, View } from '${1:@tarojs}/components';",
+      "",
+      "@connect(({ ${0:${TM_FILENAME_BASE}} }) => ({}))",
+      "export default class ${0:${TM_FILENAME_BASE}} extends Component {",
+      "   render() {",
+      "       ",
+      "   }",
+      "}"
+    ]
+  },
+  "import style": {
+    "prefix": "imstyl",
+    "body": [
+      "import styles from './${0:style}.styl';",
+      "require('./${0:style}.styl')"
+    ]
+  },
+  "connect": {
+    "prefix": "tcon",
+    "body": "@connect(({ ${0:${TM_FILENAME_BASE}} }) => ({}))"
+  },
+  "update immutable": {
+    "prefix": "imupdate",
+    "body": "import update from 'immutability-helper';"
+  },
+  "eslint-disable": {
+    "prefix": "eslint-disable",
+    "body": ["/* eslint-disable ${1:rule} */", "$0/* eslint-enable ${1} */"],
+    "description": "ESLint disable wrapper"
+  },
+  "eslint-disable-line": {
+    "prefix": "eslint-disable-line",
+    "body": ["// eslint-disable-line ${0:rule}"],
+    "description": "ESLint disable line"
+  },
+  "eslint-disable-next-line": {
+    "prefix": "eslint-disable-next-line",
+    "body": ["// eslint-disable-next-line ${0:rule}"],
+    "description": "ESLint disable next line"
+  },
+  "remax import": {
+    "prefix": "remax",
+    "body": ["import { View } from 'remax';"],
+    "description": "import remax"
+  },
+  "remax page": {
+    "prefix": "remax page",
+    "body": [
+      "import react from 'react';",
+      "import { View } from 'remax'",
+      "",
+      "export default (props) => {",
+      "   ",
+      "}"
+    ],
+    "description": "import remax"
+  },
+  "function component": {
+    "prefix": "fcomp",
+    "body": ["export default (props) => {", "   ", "}"]
+  },
+  "redux": {
+    "prefix": "redux connetx",
+    "body": ["import { connect } from '${0:react-redux}'"]
+  }
+}
