@@ -34,6 +34,17 @@
     "prefix": "saga",
     "body": ["import { ${1:request} } from '@doctorwork/saga'"]
   },
+  "taro function component": {
+    "prefix": "taro func",
+    "body": [
+      "import Taro from '@tarojs/taro';",
+      "import { View } from '${1:@tarojs}/components';",
+      "",
+      "export default (props) => {",
+      "   ",
+      "}"
+    ]
+  },
   "taro class": {
     "prefix": "taroc",
     "body": [
