@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/newset/web-snippets/compare/v1.0.1...v1.0.2) (2019-08-26)
+
+
+### Bug Fixes
+
+* fix react naming error, should be captialized ([fe049fe](https://github.com/newset/web-snippets/commit/fe049fe))
+
+
+### Features
+
+* add render return for react like prefix ([b96f245](https://github.com/newset/web-snippets/commit/b96f245))
+* add taro function component ([2d80baa](https://github.com/newset/web-snippets/commit/2d80baa))
+
+
+
 ### [1.0.1](https://github.com/newset/web-snippets/compare/v1.0.0...v1.0.1) (2019-08-23)
 
 
