@@ -111,11 +111,11 @@
   "remax page": {
     "prefix": "remax page",
     "body": [
-      "import react from 'react';",
+      "import React from 'react';",
       "import { View } from 'remax'",
       "",
       "export default (props) => {",
-      "   ",
+      "   return null",
       "}"
     ],
     "description": "import remax"
@@ -136,7 +136,7 @@
   "function component": {
     "prefix": "fcomp",
     "body": [
-      "import react from 'react';",
+      "import React from 'react';",
       "",
       "export default (props) => {",
       "   ",
