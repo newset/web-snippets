@@ -147,5 +147,22 @@
   "redux": {
     "prefix": "redux",
     "body": ["import { connect } from '${0:react-redux}'"]
+  },
+  "function component connected": {
+    "prefix": "fcomp dva",
+    "body": [
+      "import React, { useEffect } from 'react';",
+      "import { connect } from 'dva';",
+      " ",
+      "const ${0:${TM_FILENAME_BASE}} = (props) => {",
+      "\tuseEffect(()=> {",
+      "\t\t",
+      "\t})",
+      "\treturn <div></div>",
+      "}",
+      "export default connect(() => {",
+      "",
+      "})(${0:${TM_FILENAME_BASE}})"
+    ]
   }
 }
