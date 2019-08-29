@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/newset/web-snippets/compare/v1.0.2...v1.0.3) (2019-08-29)
+
+
+### Features
+
+* add format save for javascript related language ([f251691](https://github.com/newset/web-snippets/commit/f251691))
+* add function component connected ([6eb4a25](https://github.com/newset/web-snippets/commit/6eb4a25))
+
+
+
 ### [1.0.2](https://github.com/newset/web-snippets/compare/v1.0.1...v1.0.2) (2019-08-26)
 
 
