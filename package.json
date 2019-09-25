@@ -1,7 +1,7 @@
 {
   "name": "web-snippets",
   "displayName": "React/Remax/Weapp Snippets",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "scripts": {
     "release:patch": "standard-version --release-as patch && vsce publish",
