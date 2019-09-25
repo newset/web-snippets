@@ -113,10 +113,10 @@
     "prefix": "remax page",
     "body": [
       "import React from 'react';",
-      "import { View } from 'remax'",
+      "import { View } from 'remax/${0:base}'",
       "",
       "export default (props) => {",
-      "   return <div></div>",
+      "   return <View></View>",
       "}"
     ],
     "description": "import remax"
@@ -125,7 +125,7 @@
     "prefix": "remax class",
     "body": [
       "import React, { Compoent } from 'react';",
-      "import { View } from 'remax';",
+      "import { View } from 'remax/${1:base}';",
       "",
       "export default class ${0:${TM_FILENAME_BASE}} extends Component {",
       "   render() {",
@@ -138,9 +138,10 @@
     "prefix": "fcomp",
     "body": [
       "import React from 'react';",
+      "import { View } from 'remax/${1:base}';",
       "",
       "export default (props) => {",
-      "   return <div></div>",
+      "   return <View></View>",
       "}"
     ]
   },
@@ -153,12 +154,13 @@
     "body": [
       "import React, { useEffect } from 'react';",
       "import { connect } from 'dva';",
+      "import { View } from 'remax/${1:base}';",
       " ",
       "const ${0:${TM_FILENAME_BASE}} = (props) => {",
       "\tuseEffect(()=> {",
       "\t\t",
       "\t})",
-      "\treturn <div></div>",
+      "\treturn <View></View>",
       "}",
       "export default connect(() => {",
       "",

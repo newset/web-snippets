@@ -4,6 +4,8 @@
   "version": "1.0.3",
   "description": "",
   "scripts": {
+    "release:patch": "standard-version --release-as patch && vsce publish",
+    "release:minor": "standard-version --release-as minor && vsce publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
