@@ -1,0 +1,17 @@
+{
+  "contributes": {
+    "languages": [
+      {
+        "id": "graphql",
+        "extensions": [".graphql", ".gql"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "graphql",
+        "scopeName": "source.graphql",
+        "path": "./scr/graphql.json"
+      }
+    ]
+  }
+}

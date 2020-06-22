@@ -106,14 +106,14 @@
   },
   "remax import": {
     "prefix": "remax",
-    "body": ["import { View } from 'remax';"],
+    "body": ["import { View${2:} } from 'remax/${1:base}';"],
     "description": "import remax"
   },
   "remax page": {
     "prefix": "remax page",
     "body": [
       "import React from 'react';",
-      "import { View } from 'remax/${0:base}'",
+      "import { View${2:} } from 'remax/${1:base}'",
       "",
       "export default (props) => {",
       "   return <View></View>",
@@ -125,7 +125,7 @@
     "prefix": "remax class",
     "body": [
       "import React, { Compoent } from 'react';",
-      "import { View } from 'remax/${1:base}';",
+      "import { View,${2:} } from 'remax/${1:base}';",
       "",
       "export default class ${0:${TM_FILENAME_BASE}} extends Component {",
       "   render() {",
@@ -138,7 +138,7 @@
     "prefix": "fcomp",
     "body": [
       "import React from 'react';",
-      "import { View } from 'remax/${1:base}';",
+      "import { View${2:} } from 'remax/${1:base}';",
       "",
       "export default (props) => {",
       "   return <View></View>",
@@ -147,16 +147,16 @@
   },
   "redux": {
     "prefix": "redux",
-    "body": ["import { connect } from '${0:react-redux}'"]
+    "body": ["import { connect } from '${1:react-redux}'"]
   },
   "function component connected": {
     "prefix": "fcomp dva",
     "body": [
       "import React, { useEffect } from 'react';",
       "import { connect } from 'dva';",
-      "import { View } from 'remax/${1:base}';",
+      "import { View${3:} } from 'remax/${2:base}';",
       " ",
-      "const ${0:${TM_FILENAME_BASE}} = (props) => {",
+      "const ${1:${TM_FILENAME_BASE}} = (props) => {",
       "\tuseEffect(()=> {",
       "\t\t",
       "\t})",
@@ -164,7 +164,7 @@
       "}",
       "export default connect(() => {",
       "",
-      "})(${0:${TM_FILENAME_BASE}})"
+      "})(${1:${TM_FILENAME_BASE}})"
     ]
   }
 }

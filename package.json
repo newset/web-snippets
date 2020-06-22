@@ -12,6 +12,26 @@
     "url": "https://github.com/newset/web-snippets.git"
   },
   "contributes": {
+    "languages": [
+      {
+        "id": "graphql",
+        "extensions": [
+          ".gql",
+          ".graphql",
+          ".graphqls"
+        ],
+        "aliases": [
+          "GraphQL"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "graphql",
+        "scopeName": "source.graphql",
+        "path": "./scr/graphql.json"
+      }
+    ],
     "configurationDefaults": {
       "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -42,6 +62,14 @@
       {
         "language": "javascriptreact",
         "path": "./src/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./src/typescript.json"
       }
     ]
   },
